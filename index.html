@@ -1,0 +1,433 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Loan.construction — Premium Domain For Sale</title>
+  <meta name="description" content="Loan.construction — premium domain ideal for construction finance, project lending platforms, contractor lending, equipment financing and industry-specific lending marketplaces. Submit an offer to purchase." />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://loan.construction/" />
+  <meta name="theme-color" content="#21343a" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Loan.construction — Premium Domain For Sale" />
+  <meta property="og:description" content="Loan.construction — brandable domain for construction lending, project finance, contractor loans, equipment financing and construction fintech platforms. Contact domain@loan.construction" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://loan.construction/" />
+  <meta property="og:image" content="https://loan.construction/og-image.png" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Loan.construction — Premium Domain For Sale" />
+  <meta name="twitter:description" content="Loan.construction — brandable domain for construction finance, contractor lending and equipment loans." />
+  <meta name="twitter:image" content="https://loan.construction/og-image.png" />
+
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="alternate" hreflang="en" href="https://loan.construction/" />
+  <meta name="distribution" content="global" />
+  <meta name="rating" content="general" />
+
+  <style>
+    :root{
+      --max-width:1120px;
+      --bg-top:#f6fbfc;
+      --bg-bottom:#ffffff;
+      --ink:#0b2b2b;
+      --muted:#5e7170;
+      --accent-safety:#ff8c2b;    /* safety orange */
+      --accent-steel:#2b4a57;     /* steel blue */
+      --blueprint:#eaf6ff;
+      --card:#ffffff;
+      --radius:16px;
+      --shadow: 0 28px 86px rgba(6,12,18,0.06);
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0}
+    body{
+      min-height:100vh;
+      display:flex;
+      align-items:flex-start;
+      justify-content:center;
+      padding:36px 20px;
+      color:var(--ink);
+      background:
+        radial-gradient(700px 220px at 12% 10%, rgba(43,74,87,0.02), transparent 12%),
+        linear-gradient(180deg,var(--bg-top) 0%, var(--bg-bottom) 100%);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.45;
+      overflow-x:hidden;
+    }
+
+    /* Look chosen: "Construction Ledger"
+       - industrial, dependable aesthetic with blueprint band, concrete texture and safety orange accents
+       - floating tokens (crane, hardhat, blueprint, calculator) for context
+       - decorative layers are pointer-events:none so they never block UI
+    */
+    .bg { position:fixed; inset:0; z-index:0; pointer-events:none; overflow:visible; }
+
+    .ledger-band {
+      position:fixed;
+      left:50%;
+      top:8%;
+      transform:translateX(-50%);
+      width:1100px;
+      height:320px;
+      z-index:0;
+      border-radius:18px;
+      pointer-events:none;
+      background:
+        linear-gradient(180deg, rgba(234,242,247,0.98), rgba(255,255,255,0.98)),
+        url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1100' height='320'><g fill='%23000000' fill-opacity='0.02'><rect x='20' y='28' width='240' height='12' rx='6'/><rect x='300' y='46' width='180' height='12' rx='6'/></g></svg>");
+      background-size:420px 140px;
+      mix-blend-mode:screen;
+      box-shadow: inset 0 18px 42px rgba(0,0,0,0.02);
+      opacity:0.96;
+    }
+
+    .blueprint-spot {
+      position:fixed;
+      left:50%;
+      top:14%;
+      transform:translateX(-50%);
+      width:760px;
+      height:220px;
+      z-index:0;
+      pointer-events:none;
+      background-image:
+        url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 760 220'><g stroke='%23000000' stroke-opacity='0.03' fill='none'><path d='M20 120h720'/><path d='M120 40v160M240 60v120M360 20v180M480 60v120M600 40v160' stroke-width='1'/></g></svg>");
+      background-repeat:no-repeat;
+      background-size:contain;
+      mix-blend-mode:screen;
+      opacity:0.06;
+      filter: blur(3px);
+    }
+
+    .concrete {
+      position:fixed;
+      right:6%;
+      bottom:6%;
+      width:240px;
+      height:160px;
+      z-index:0;
+      pointer-events:none;
+      opacity:0.04;
+      background-image:
+        url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 240 160'><g fill='%23000000' fill-opacity='0.02'><rect x='0' y='0' width='240' height='160' rx='4'/></g></svg>");
+      background-size:cover;
+      mix-blend-mode:multiply;
+    }
+
+    .floaters { position:fixed; inset:0; z-index:0; pointer-events:none; overflow:visible; }
+
+    .token {
+      position:absolute;
+      width:80px;
+      height:80px;
+      background-size:contain;
+      background-repeat:no-repeat;
+      opacity:0.12;
+      will-change:transform,opacity;
+      filter: drop-shadow(0 14px 36px rgba(6,12,18,0.06));
+    }
+
+    @keyframes floaty {
+      0% { transform: translateY(0) rotate(-6deg); }
+      50% { transform: translateY(-18px) rotate(6deg); }
+      100% { transform: translateY(0) rotate(-6deg); }
+    }
+
+    .container{
+      width:100%;
+      max-width:var(--max-width);
+      padding:34px;
+      border-radius:18px;
+      background: linear-gradient(180deg,#ffffff,#fbfeff);
+      box-shadow: var(--shadow);
+      border:1px solid rgba(6,12,18,0.03);
+      position:relative;
+      z-index:2;
+    }
+
+    header{ display:flex; gap:18px; align-items:center; justify-content:space-between; margin-bottom:12px; }
+    .brand{ display:flex; gap:14px; align-items:center; }
+    .logo{
+      width:92px;height:92px;border-radius:12px;
+      background: linear-gradient(135deg,var(--accent-steel), var(--accent-safety));
+      color:#071a18; display:flex; align-items:center; justify-content:center;
+      font-weight:900; font-size:20px; flex-shrink:0;
+      box-shadow: 0 12px 36px rgba(6,12,18,0.06);
+    }
+
+    h1{ margin:0; font-size:26px; color:var(--ink); }
+    p.lead{ margin:6px 0 0; color:var(--muted); font-size:14px; max-width:760px; }
+
+    .grid{ display:grid; grid-template-columns: 1fr 360px; gap:26px; align-items:start; margin-top:18px; }
+
+    .hero {
+      padding:22px; border-radius:14px; color:var(--ink);
+      background: linear-gradient(90deg, rgba(43,74,87,0.02), rgba(255,140,43,0.01));
+      border:1px solid rgba(6,12,18,0.03);
+      display:flex; gap:18px; align-items:center; justify-content:space-between;
+    }
+    .hero h2{ margin:0 0 8px 0; font-size:20px; color:var(--accent-steel); }
+    .hero p{ margin:0; color:var(--muted); }
+
+    .panel { background: var(--card); color:var(--ink); padding:20px; border-radius:12px; box-shadow:0 10px 34px rgba(6,12,18,0.06); border:1px solid rgba(6,12,18,0.02); }
+
+    h2.section{ margin-top:0; font-size:18px; color:var(--accent-safety); }
+    .features ul{ margin:0; padding-left:18px; color:var(--muted); }
+    .features li{ margin-bottom:10px; }
+
+    .samples{ display:flex; gap:12px; margin-top:12px; flex-wrap:wrap; }
+    .sample { min-width:140px; padding:12px; border-radius:12px; background:var(--blueprint); border:1px solid rgba(6,12,18,0.03); color:var(--muted); font-weight:700; text-align:center; }
+
+    .cta-row{ display:flex; gap:12px; margin-top:16px; flex-wrap:wrap; align-items:center; }
+    .btn{ display:inline-flex; gap:10px; align-items:center; padding:10px 14px; border-radius:999px; font-weight:800; cursor:pointer; text-decoration:none; border:0; }
+    .btn-primary{ background:linear-gradient(90deg,var(--accent-safety), #ffc56b); color:#071a18; box-shadow: 0 10px 30px rgba(6,12,18,0.12); }
+    .btn-ghost{ background:transparent; border:1px solid rgba(6,12,18,0.06); color:var(--muted); }
+
+    .contact-card{ position:sticky; top:32px; align-self:start; background: linear-gradient(180deg,#ffffff,#fbfbfb); padding:18px; border-radius:12px; border:1px solid rgba(6,12,18,0.03); box-shadow: 0 8px 26px rgba(6,12,18,0.035); max-width:360px; color:var(--ink); }
+
+    .contact-card h3{ margin:0 0 8px 0; font-size:16px; color:var(--accent-steel); }
+    .contact-email, .contact-email a{ display:inline-block; font-weight:800; color:var(--accent-safety); text-decoration:none; }
+
+    input, textarea { width:100%; padding:10px 12px; border-radius:8px; border:1px solid rgba(6,12,18,0.06); margin-bottom:12px; font-size:14px; color:var(--ink); background:#fff; }
+
+    footer{ margin-top:18px; color:var(--muted); font-size:13px; text-align:center; }
+
+    @media (max-width:980px){
+      .grid{ grid-template-columns:1fr; gap:18px; }
+      .contact-card{ position:relative; top:auto; width:100%; max-width:none; }
+      .container{ padding:24px; }
+      .ledger-band, .blueprint-spot, .concrete, .floaters { display:none; }
+      .logo{ width:76px; height:76px; border-radius:12px; }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@graph":[
+      {
+        "@type":"WebSite",
+        "url":"https://loan.construction",
+        "name":"Loan.construction",
+        "description":"Loan.construction — premium domain for construction finance, contractor lending, project loans, equipment financing and construction lending marketplaces."
+      },
+      {
+        "@type":"Organization",
+        "name":"Loan.construction",
+        "url":"https://loan.construction",
+        "contactPoint":[
+          {
+            "@type":"ContactPoint",
+            "contactType":"sales",
+            "email":"domain@loan.construction"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <div class="bg" aria-hidden="true">
+    <div class="ledger-band" aria-hidden="true"></div>
+    <div class="blueprint-spot" aria-hidden="true"></div>
+    <div class="concrete" aria-hidden="true"></div>
+    <div class="floaters" id="floaters" aria-hidden="true"></div>
+  </div>
+
+  <main class="container" role="main" aria-labelledby="main-heading">
+    <header>
+      <div class="brand">
+        <div class="logo" aria-hidden="true">LC</div>
+        <div>
+          <h1 id="main-heading">Loan.construction</h1>
+          <p class="lead">Premium domain for construction finance — project lending, contractor loans, equipment financing and construction-focused lending marketplaces.</p>
+        </div>
+      </div>
+
+      <div style="text-align:right">
+        <div style="color:var(--muted);font-size:13px">For inquiries</div>
+        <div class="contact-email"><a href="mailto:domain@loan.construction">domain@loan.construction</a></div>
+      </div>
+    </header>
+
+    <section class="grid" aria-label="Main content">
+      <div>
+        <div class="hero" role="note" aria-live="polite" aria-labelledby="hero-title">
+          <div>
+            <h2 id="hero-title">A category-first name built for construction lending</h2>
+            <p>Loan.construction delivers immediate sector clarity — ideal for platforms that underwrite project finance, provide contractor working capital, finance equipment, or operate vertical lending marketplaces for the built world.</p>
+
+            <div class="cta-row">
+              <a class="btn btn-primary" href="#" id="inquireBtn">Make an Offer</a>
+              <a class="btn btn-ghost" href="mailto:domain@loan.construction?subject=Domain%20Offer%20-%20Loan.construction">Email Now</a>
+            </div>
+          </div>
+
+          <div style="min-width:220px; text-align:center">
+            <div style="color:var(--muted); font-size:13px">Domain</div>
+            <div style="font-weight:900; font-size:18px; margin-top:6px">Loan.construction</div>
+            <div style="color:var(--muted); font-size:13px; margin-top:8px">Serious offers only.</div>
+          </div>
+        </div>
+
+        <article class="panel" aria-labelledby="why-title" style="margin-top:18px">
+          <h2 id="why-title" class="section">Why Loan.construction?</h2>
+          <p class="lead">Short, explicit and credible — this domain signals vertical expertise in construction finance, helping buyers, partners and operators understand the product immediately.</p>
+
+          <div class="features" style="margin-top:12px">
+            <ul>
+              <li>Direct sector signal — clear to contractors, developers and lenders</li>
+              <li>Fits project finance portals, equipment loan programs, contractor financing and marketplace lending</li>
+              <li>Brandable across web, dashboards, partner networks and industry channels</li>
+            </ul>
+          </div>
+
+          <div class="samples" aria-hidden="false">
+            <div class="sample">Project Loan Marketplace</div>
+            <div class="sample">Contractor Working Capital</div>
+            <div class="sample">Equipment Finance Platform</div>
+            <div class="sample">Developer / Construction Lender Portal</div>
+          </div>
+        </article>
+
+        <article class="panel" style="margin-top:18px" aria-labelledby="about-title">
+          <h3 id="about-title" style="margin-top:0">About this domain</h3>
+          <p class="lead">Loan.construction is a premium domain available for transfer.</p>
+
+          <ul style="color:var(--muted);margin-top:12px">
+            <li>Well-suited to fintech founders, lenders, equipment lessors, developer platforms and marketplace operators</li>
+            <li>Useful for integrations with underwriting engines, payment rails, equipment registries and partner networks</li>
+            <li>Escrow recommended to ensure a smooth, secure transfer for both buyer and seller.</li>
+          </ul>
+
+          <div class="resources" style="margin-top:12px; font-size:13px; color:var(--muted); border-top:1px dashed rgba(6,12,18,0.04); padding-top:12px">
+            Helpful resource: <a href="https://corelli.com/domains.html" target="_blank" rel="noopener noreferrer" style="color:var(--accent-safety)">How To Choose A Domain Name</a>
+          </div>
+        </article>
+      </div>
+
+      <aside class="contact-card" aria-label="Contact & offer">
+        <div>
+          <h3 style="margin-top:0">Contact & Offer</h3>
+          <p style="margin-top:6px;color:var(--muted)">Submit an offer — this form opens your email client with the details prefilled. Or email <a href="mailto:domain@loan.construction" style="color:var(--accent-safety)">domain@loan.construction</a>.</p>
+
+          <form id="inquiryForm" onsubmit="handleSubmit(event)" aria-label="Domain offer form">
+            <label for="name">Your name</label>
+            <input id="name" name="name" type="text" placeholder="Jane Doe" required />
+
+            <label for="email">Your email</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required />
+
+            <label for="offer">Your offer (USD)</label>
+            <input id="offer" name="offer" type="text" placeholder="Enter your offer (USD)" required />
+
+            <label for="company">Company (optional)</label>
+            <input id="company" name="company" type="text" placeholder="Your company or organization" />
+
+            <label for="country">Country</label>
+            <input id="country" name="country" type="text" placeholder="Your country" required />
+
+            <label for="phone">Phone number (optional)</label>
+            <input id="phone" name="phone" type="tel" />
+
+            <label for="message">Message (questions, timeline, escrow preference)</label>
+            <textarea id="message" name="message" placeholder="Hi — I'm submitting an offer for Loan.construction. Please share transfer instructions and next steps."></textarea>
+
+            <button class="btn btn-primary" type="submit" style="width:100%; margin-top:6px">Send Offer</button>
+          </form>
+
+          <footer style="margin-top:10px; text-align:left; color:var(--muted); font-size:13px">
+            Prefer direct email? <a href="mailto:domain@loan.construction" style="color:var(--accent-safety)">domain@loan.construction</a>
+          </footer>
+        </div>
+      </aside>
+    </section>
+
+    <footer>
+      &copy; 2025 Loan.construction. All rights reserved.
+    </footer>
+  </main>
+
+  <script>
+    // floating construction tokens (crane, hardhat, blueprint, calculator) as data-URI SVGs
+    (function placeFloaters(){
+      const layer = document.getElementById('floaters');
+      if(!layer) return;
+
+      const svgs = {
+        crane: encodeURIComponent(`<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect x='4' y='48' width='56' height='8' rx='2' fill='%23FFF6E6'/><path d='M12 48v-22h28v2' stroke='%23000000' stroke-opacity='0.04' stroke-width='2' fill='none'/></svg>`),
+        hardhat: encodeURIComponent(`<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 48'><path d='M6 26c10-12 42-12 52 0v6H6v-6z' fill='%23FF8C2B' stroke='%23000000' stroke-opacity='0.03'/></svg>`),
+        blueprint: encodeURIComponent(`<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 72 72'><rect x='4' y='4' width='64' height='64' rx='4' fill='%23EAF6FF' stroke='%23000000' stroke-opacity='0.03'/><path d='M12 20h48M12 36h48M12 52h48' stroke='%23000000' stroke-opacity='0.03' stroke-width='1'/></svg>`),
+        calc: encodeURIComponent(`<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 64'><rect x='6' y='8' width='36' height='48' rx='4' fill='%23FFF' stroke='%23000000' stroke-opacity='0.03'/></svg>`)
+      };
+
+      const items = [
+        {svg:svgs.crane, left:'10%', top:'18%', size:96, dur:9800},
+        {svg:svgs.hardhat, left:'78%', top:'16%', size:80, dur:11000},
+        {svg:svgs.blueprint, left:'48%', top:'66%', size:92, dur:10000},
+        {svg:svgs.calc, left:'84%', top:'54%', size:72, dur:12000}
+      ];
+
+      items.forEach(it=>{
+        const el = document.createElement('div');
+        el.className = 'token';
+        el.style.left = it.left;
+        el.style.top = it.top;
+        el.style.width = it.size + 'px';
+        el.style.height = it.size + 'px';
+        el.style.backgroundImage = `url("data:image/svg+xml;utf8,${it.svg}")`;
+        el.style.animation = `floaty ${it.dur}ms ease-in-out ${Math.random()*1200}ms infinite`;
+        el.style.opacity = 0.06 + Math.random()*0.18;
+        layer.appendChild(el);
+      });
+    })();
+
+    // mailto form composer
+    function handleSubmit(e){
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const offer = document.getElementById('offer').value.trim();
+      const company = document.getElementById('company').value.trim();
+      const country = document.getElementById('country').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      const message = document.getElementById('message').value.trim();
+
+      const subject = encodeURIComponent('Domain Offer - Loan.construction');
+      const body =
+        `Name: ${name}\n` +
+        `Email: ${email}\n` +
+        `Company: ${company || '(not provided)'}\n` +
+        `Offer (USD): ${offer}\n` +
+        `Country: ${country}\n` +
+        `Phone: ${phone || '(not provided)'}\n\n` +
+        `Message:\n${message}\n\n---\nSent from Loan.construction offer form`;
+
+      window.location.href = `mailto:domain@loan.construction?subject=${subject}&body=${encodeURIComponent(body)}`;
+    }
+
+    document.getElementById('inquiryForm').addEventListener('submit', handleSubmit);
+
+    // Inquire button behavior: scroll to form on mobile, open mailto on desktop
+    document.getElementById('inquireBtn').addEventListener('click', function(e){
+      e.preventDefault();
+      const form = document.getElementById('inquiryForm');
+      if(window.innerWidth < 900){
+        form.scrollIntoView({behavior:'smooth', block:'center'});
+        form.querySelector('input')?.focus();
+      } else {
+        const subject = encodeURIComponent('Domain Offer - Loan.construction');
+        const body = encodeURIComponent('Hi — I would like to make an offer for Loan.construction. Please reply with transfer instructions and next steps.');
+        window.location.href = `mailto:domain@loan.construction?subject=${subject}&body=${body}`;
+      }
+    });
+  </script>
+</body>
+</html>
